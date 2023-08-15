@@ -31,8 +31,6 @@ class _SigninPageState extends State<SigninPage> {
 
     form.save();
 
-    print('email: $_email, password: $_password');
-
     try {
       await context
           .read<SigninProvider>()
