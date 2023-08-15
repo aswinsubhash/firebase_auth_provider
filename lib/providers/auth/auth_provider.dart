@@ -1,10 +1,8 @@
 import 'dart:developer';
-import 'package:equatable/equatable.dart';
 import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
+import 'package:firebase_auth_provider/providers/auth/auth_state.dart';
 import 'package:flutter/foundation.dart';
 import 'package:firebase_auth_provider/repositories/auth_repository.dart';
-
-part 'auth_state.dart';
 
 class AuthProvider with ChangeNotifier {
   AuthState _state = AuthState.unknown();
@@ -29,7 +27,7 @@ class AuthProvider with ChangeNotifier {
     notifyListeners();
   }
 
-  void signout()async{
+  void signout() async {
     await authRepository.signout();
   }
 }

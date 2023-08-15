@@ -6,6 +6,7 @@ import 'package:firebase_auth_provider/pages/siginin_page.dart';
 import 'package:firebase_auth_provider/pages/signup_page.dart';
 import 'package:firebase_auth_provider/pages/splash_page.dart';
 import 'package:firebase_auth_provider/providers/auth/auth_provider.dart';
+import 'package:firebase_auth_provider/providers/signin/sigin_provider.dart';
 import 'package:firebase_auth_provider/repositories/auth_repository.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -44,6 +45,11 @@ class MyApp extends StatelessWidget {
             AuthProvider? authProvider,
           ) =>
               authProvider!..update(userStream),
+        ),
+        ChangeNotifierProvider<SigninProvider>(
+          create: (context) => SigninProvider(
+            authRepository: context.read<AuthRepository>(),
+          ),
         )
       ],
       child: MaterialApp(
