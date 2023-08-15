@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
               ),
               const SizedBox(height: 20.0),
               const Text(
-                'Provider is an awesom\nstate management library\nfor flutter!',
+                'Provider is an awesome\nstate management library\nfor flutter!',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 24.0),
               )
