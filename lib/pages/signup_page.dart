@@ -1,7 +1,7 @@
-import 'package:firebase_auth_provider/models/custom_error.dart';
-import 'package:firebase_auth_provider/providers/Signup/Signup_state.dart';
-import 'package:firebase_auth_provider/providers/signup/signup_provider.dart';
-import 'package:firebase_auth_provider/utils/error_dialog.dart';
+import '../models/custom_error.dart';
+import '../providers/Signup/Signup_state.dart';
+import '../providers/signup/signup_provider.dart';
+import '../utils/error_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:validators/validators.dart';

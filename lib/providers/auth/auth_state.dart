@@ -1,6 +1,6 @@
 
-import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 import 'package:equatable/equatable.dart';
+import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 
 enum AuthStatus {
   unknown,

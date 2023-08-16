@@ -1,19 +1,20 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
-import 'package:firebase_auth_provider/firebase_options.dart';
-import 'package:firebase_auth_provider/pages/home_page.dart';
-import 'package:firebase_auth_provider/pages/siginin_page.dart';
-import 'package:firebase_auth_provider/pages/signup_page.dart';
-import 'package:firebase_auth_provider/pages/splash_page.dart';
-import 'package:firebase_auth_provider/providers/auth/auth_provider.dart';
-import 'package:firebase_auth_provider/providers/profile/profile_provider.dart';
-import 'package:firebase_auth_provider/providers/signin/sigin_provider.dart';
-import 'package:firebase_auth_provider/providers/signup/signup_provider.dart';
-import 'package:firebase_auth_provider/repositories/auth_repository.dart';
-import 'package:firebase_auth_provider/repositories/profile_repository.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'firebase_options.dart';
+import 'pages/home_page.dart';
+import 'pages/siginin_page.dart';
+import 'pages/signup_page.dart';
+import 'pages/splash_page.dart';
+import 'providers/auth/auth_provider.dart';
+import 'providers/profile/profile_provider.dart';
+import 'providers/signin/sigin_provider.dart';
+import 'providers/signup/signup_provider.dart';
+import 'repositories/auth_repository.dart';
+import 'repositories/profile_repository.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

@@ -1,8 +1,8 @@
 import 'dart:developer';
 import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
-import 'package:firebase_auth_provider/providers/auth/auth_state.dart';
+import 'auth_state.dart';
 import 'package:flutter/foundation.dart';
-import 'package:firebase_auth_provider/repositories/auth_repository.dart';
+import '../../repositories/auth_repository.dart';
 
 class AuthProvider with ChangeNotifier {
   AuthState _state = AuthState.unknown();

@@ -1,8 +1,8 @@
-import 'package:firebase_auth_provider/models/custom_error.dart';
+import '../../models/custom_error.dart';
 import 'package:flutter/foundation.dart';
 
-import 'package:firebase_auth_provider/providers/Signup/Signup_state.dart';
-import 'package:firebase_auth_provider/repositories/auth_repository.dart';
+import '../Signup/Signup_state.dart';
+import '../../repositories/auth_repository.dart';
 
 class SignupProvider extends ChangeNotifier {
   SignupState _state = SignupState.initial();

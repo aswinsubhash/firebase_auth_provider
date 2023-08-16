@@ -1,9 +1,10 @@
-import 'package:firebase_auth_provider/pages/home_page.dart';
-import 'package:firebase_auth_provider/pages/siginin_page.dart';
-import 'package:firebase_auth_provider/providers/auth/auth_provider.dart';
-import 'package:firebase_auth_provider/providers/auth/auth_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../providers/auth/auth_provider.dart';
+import '../providers/auth/auth_state.dart';
+import 'home_page.dart';
+import 'siginin_page.dart';
 
 class SplashPage extends StatelessWidget {
   static const String routeName = '/';

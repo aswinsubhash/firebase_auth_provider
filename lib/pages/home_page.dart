@@ -1,5 +1,5 @@
-import 'package:firebase_auth_provider/pages/profile_page.dart';
-import 'package:firebase_auth_provider/providers/auth/auth_provider.dart';
+import 'profile_page.dart';
+import '../providers/auth/auth_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

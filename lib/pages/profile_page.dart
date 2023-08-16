@@ -1,10 +1,11 @@
-import 'package:firebase_auth_provider/providers/profile/profile_provider.dart';
-import 'package:firebase_auth_provider/providers/profile/profile_state.dart';
-import 'package:firebase_auth_provider/utils/error_dialog.dart';
-import 'package:firebase_auth_provider/widgets/build_profile.dart';
+import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
+
+import '../providers/profile/profile_provider.dart';
+import '../providers/profile/profile_state.dart';
+import '../utils/error_dialog.dart';
+import '../widgets/build_profile.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});

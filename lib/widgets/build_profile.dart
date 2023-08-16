@@ -1,7 +1,8 @@
-import 'package:firebase_auth_provider/providers/profile/profile_provider.dart';
-import 'package:firebase_auth_provider/providers/profile/profile_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../providers/profile/profile_provider.dart';
+import '../providers/profile/profile_state.dart';
 
 Widget buildProfile(BuildContext context) {
   final profileState = context.watch<ProfileProvider>().state;

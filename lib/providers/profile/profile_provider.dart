@@ -1,9 +1,9 @@
-import 'package:firebase_auth_provider/models/custom_error.dart';
-import 'package:firebase_auth_provider/models/user_model.dart';
 import 'package:flutter/foundation.dart';
 
-import 'package:firebase_auth_provider/providers/profile/profile_state.dart';
-import 'package:firebase_auth_provider/repositories/profile_repository.dart';
+import '../../models/custom_error.dart';
+import '../../models/user_model.dart';
+import '../../repositories/profile_repository.dart';
+import 'profile_state.dart';
 
 class ProfileProvider with ChangeNotifier {
   ProfileState _state = ProfileState.initial();
